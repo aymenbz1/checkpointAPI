@@ -8,7 +8,7 @@ const Users=()=>{
      const fetchUsers=()=>{
          axios
          .get("https://jsonplaceholder.typicode.com/users")
-         .then((res)=>ListUsers(res.data))
+         .then((res)=>setListUsers(res.data))
          .catch((err)=>console.log(err))
      }
 useEffect(()=>{
